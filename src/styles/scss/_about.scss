@@ -1,0 +1,90 @@
+.about {
+    background-color: #fff;
+    &__wrapper {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 128px 109px 155px 109px;
+        background-image: url("../../../images/photos/houseplant1.png");
+        background-repeat: no-repeat;
+        background-position: bottom 94px right 109px;
+        background-size: 464px 479px;
+    }
+    @media (max-width:1300px) {
+        &__wrapper {
+            padding:128px 70px 155px 70px;
+            background-position: bottom 94px right 70px;
+        }
+    }
+    @media (max-width:768px) {
+        &__wrapper {
+        padding: 40px 50px 393px 50px;
+        background-position: bottom 95px center;
+        background-size: 250px 258px;
+        }
+    }
+    @media (max-width:380px) {
+        &__wrapper {
+            padding: 30px 25px 31px 25px;
+            background-position: bottom 30px center;
+            background-size: 150px 147px;
+            }
+    }
+}
+.info-about {
+    &__title {
+        max-width: 463px;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+        color: #499A18;
+        padding-bottom:6px;
+    }
+    @media (max-width:768px) {
+        &__title {
+            margin:0 auto;
+            font-size:35px;
+            line-height:46px;
+            text-align: center;
+        }
+        }
+    @media (max-width:380px) {
+        &__title {
+            max-width: 288px;
+            margin:0 auto;
+            font-size:25px;
+            line-height:33px;
+            text-align: center;
+        }
+    }
+    &__title span {
+        color: #E06733;
+    }
+    &__text {
+        max-width: 605px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #636060;
+    }
+    @media (max-width:768px) {
+        &__text {
+            padding-top:42px;
+            padding-bottom:30px;
+            max-width:668px;
+        }
+    }
+    @media (max-width:380px) {
+        &__text {
+            font-size: 15px;
+            line-height: 25px;
+            padding-top:8px;
+            padding-bottom:150px;
+            max-width:330px;
+        }
+    }
+}

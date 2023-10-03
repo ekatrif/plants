@@ -1,0 +1,327 @@
+.contact-us {
+    background-color: #EDF2EC;
+    &__wrapper {
+        position:relative;
+        padding:26px 109px 0 109px;
+        height: 550px;
+        background-image: url("../../../images/photos/contact_woman.png");
+        background-repeat: no-repeat;
+        background-position: bottom 0 left 109px;
+        background-size: 400px 497px;
+        @media (max-width:1300px) {
+            & {
+                padding:26px 70px 0 70px;
+                background-position: bottom 0 left 70px;
+            }
+        }
+        @media (max-width:768px) {
+            & {
+                padding:40px 50px 700px 50px;
+                background-position: bottom 0 left 294px;
+                background-size: 200px 248.49px;
+            }
+        }
+        @media (max-width:700px) {
+            & {
+                background-position: bottom 0 center;
+            }
+        }
+        @media (max-width:380px) {
+            & {
+                padding:25px 25px 366px 25px;
+                background-position: bottom 0 center;
+                background-size: 100px 124.25px;
+                height:auto;
+            }
+        }
+    }
+    
+    &__title {
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 52px; 
+        color: #499A18;
+        text-align: center;
+        @media (max-width:768px) {
+            & {
+                margin-top:0;
+            }
+        }
+        @media (max-width:380px) {
+            & {
+                font-size: 25px;
+                line-height: 33px; 
+            }
+        }
+    }
+    
+    &__option {
+        position:absolute;
+        top:148px;
+        right:109px;
+        width: 450px;
+        background: #D6E7D2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 0px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        color: #717171;
+        padding:5px 0 5px 20px;
+        @media (max-width:768px) {
+            & {
+                top:151px;
+                right:calc(50% - 225px);
+                font-size: 16px;
+            }
+        }
+        @media (max-width:550px) {
+            & {
+                top:100px;
+                width: 300px;
+                right:calc(50% - 150px);
+            }
+        }
+        &:after {
+            position:absolute;
+            content:url("../../../images/svg/accordion_unactive.svg");
+            right:35px;
+            top:8px;
+            width:16px;
+            height:16px;
+        }
+        @media (max-width:380px) {
+            &:after {
+                right:19px;
+            }
+        }
+        &:hover,&-active {
+            cursor:pointer;
+            background: #C1E698;
+            border: 1px solid #D6E7D2;
+            border-radius: 0px;
+            box-shadow:none;
+            transition: all 0.2s linear;
+        }
+        &:hover:after,&-active:after {
+            position:absolute;
+            content:url("../../../images/svg/accordion_active.svg");
+            right:35px;
+            top:8px;
+            width:16px;
+            height:16px;
+        }
+        @media (max-width:768px) {
+            &:focus {
+                background: #C1E698;
+                border: 1px solid #D6E7D2;
+                border-radius: 0px;
+                box-shadow:none;
+                transition: all 0.2s linear;
+            }
+            &:focus:after {
+                position:absolute;
+                content:url("../../../images/svg/accordion_active.svg");
+                right:35px;
+                top:8px;
+                width:16px;
+                height:16px;
+            }
+        }
+        @media (max-width:380px) {
+            &:focus:after,&:hover:after {
+                right:19px;
+            }
+        }
+    
+    }
+    &__dropdown {
+        position: absolute;
+        top: 199px;
+        right: 109px;
+        width:450px;
+        background: #DCE9D9;
+        padding:27px 50px 26px 20px;
+        @media (max-width:768px) {
+            & {
+                top:190px;
+                right:calc(50% - 225px);
+            }
+        }
+        @media (max-width:550px) {
+            & {
+                top:150px;
+                width: 300px;
+                right:calc(50% - 150px);
+            }
+        }
+		}
+
+		&__list {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin:0;
+            padding:0;
+		}
+
+		&__item {
+            padding-left:6px;
+            position:relative;
+            cursor:pointer;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 40px;
+            letter-spacing: 0.05em;
+            color: #499A18;
+            &:hover,&-active {
+                color: #717171;
+                &:after,&-active:after {
+                    background: #717171;
+                }
+            }
+            &:nth-child(n+2) {
+                margin-top:8px;
+            }
+            &:after {
+                position:absolute;
+                bottom:6px;
+                left:0;
+                content:"";
+                width:100%;
+                height:1px;
+                background: #D9D9D9;
+            }
+		}
+        .contact-us {
+
+            &__info {
+            }
+    }
+    .adress-info {
+        position: absolute;
+        top: 246px;
+        right: 109px;
+        background: #EDF2EC;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        width: 448px;
+        padding:17px 76px 30px 33px;
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width:768px) {
+            & {
+                top:263px;
+                right:calc(50% - 225px);
+            }
+            }
+        @media (max-width:550px) {
+            & {
+                width: 300px;
+                right:calc(50% - 150px);
+                padding:23px 36px 23px 38px;
+                top: 200px;
+            }
+        }
+        @media (max-width:380px) {
+            & {
+                width: 282px;
+                right:calc(50% - 141px);
+            }
+        }
+        &__left {
+            @media (max-width:550px) {
+                & {
+                    max-width: 73px;                    
+                }
+            }
+        }
+            &__title {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 40px;
+                letter-spacing: 0.05em;
+                color: #000000;
+                @media (max-width:550px) {
+                    &:nth-child(3) {
+                        line-height: 20px;
+                    }
+                }
+            }
+            
+            &__right {
+                margin-left:20px;
+                @media (max-width:550px) {
+                    & {
+                    max-width:132px;
+                    margin-left:0;
+                }
+            }
+            }
+    
+            &__text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 40px;
+                letter-spacing: 0.05em;
+                color: #717171;
+                @media (max-width:550px) {
+                    &:nth-child(1),&:nth-child(2) {
+                        white-space: nowrap;
+                    }
+                    &:nth-child(3) {
+                        line-height: 20px;
+                    }
+                }
+            }
+    
+            &__button {
+                cursor:pointer;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width: 122px;
+                height: 26px;
+                border: 1px solid #E06733;
+                border-radius: 5px;
+                margin-top:20px;
+                margin-left: 128px;
+                &:hover {
+                    background-color: #E06733;
+                    color:#fff;
+                    transition: all 0.5s linear;
+                }
+                @media (max-width:550px) {
+                    & {
+                    margin-left:calc(150px - 18px - 19px - 61px);
+                    }
+                }
+            }
+    
+            &__link {
+                font-family: 'Inika';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 13px;
+                text-align: center;
+                color: #717171;
+                text-decoration: none;
+                &:hover {
+                    color:#fff;
+                    transition: all 0.5s linear;
+                }
+            }
+    }
+}

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
+    overflow-x: hidden;
+    }
+body {
+width: 100%;
+overflow-x: hidden;
+}
+.wrapper {
+    max-width:1440px;
+    margin:0 auto;
+    @media (max-width:1300px) {
+        & {
+            max-width:1300px;
+        }
+    }
+    @media (max-width:768px) {
+        & {
+            max-width:768px;
+        }
+    }
+    @media (max-width:380px) {
+        & {
+            max-width:380px;
+        }
+    }
+}
+
+

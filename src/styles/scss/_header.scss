@@ -1,0 +1,221 @@
+.header {
+    background-color: #EDF2EC;
+    @media (max-width:380px) {
+    & {
+    position: fixed;
+    z-index:10;
+    width: 100%;
+    }
+    }
+    &__wrapper {
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height:134px;
+    padding:42px 109px;
+    @media (max-width:1300px) {
+        & {
+        padding:42px 70px;
+        }
+        }
+        @media (max-width:768px) {
+        & {
+        padding:35px 50px;
+        }
+        }
+        @media (max-width:380px) {
+        & {
+        height:96px;
+        align-items: flex-start;
+        padding:36px 25px;
+        position:relative;
+        }
+        }
+        }
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    &__image {
+    display:block;
+    width:20px;
+    height:20px;
+    }
+    &__text {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+        & span {
+        display:block;
+        padding-left:1.05px;
+        }
+    }
+    & a:hover {
+    color:#499A18;
+    transition: color 0.5s linear;
+    }
+}
+.top-navigation {
+    @media (max-width:380px) {
+    & {
+    display:none;
+    }
+    }
+    &__list {
+    visibility:visible;
+    opacity: 1;
+    list-style: none;
+    display:flex;
+    padding:0;
+    margin:0;
+    }
+    &__item a {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    color: #010201;
+    text-decoration: none;
+    }
+    &__item a:hover {
+    color: #E06733;
+    font-weight: 700;
+    transition: all 0.5s linear;
+    }
+    &__item:nth-child(n+2) {
+    padding-left:46px;
+    }
+    @media (max-width:650px) {
+    &__item:nth-child(n+2) {
+    padding-left:20px;
+    }
+    }
+    @media (max-width:550px) {
+    &__item a {
+    font-size: 12px;
+    }
+    &__item:nth-child(n+2) {
+    padding-left:15px;
+    }
+    }
+    @media (max-width:430px) {
+    &__item a {
+    font-size: 10px;
+    }
+    &__item:nth-child(n+2) {
+    padding-left:10px;
+    }
+    }
+}
+.active-link a {
+    color: #E06733;
+    font-weight: 700;
+}
+.burger-menu {
+    display:none;
+    @media (max-width:380px) {
+    & {
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    width:40px;
+    }
+    &__icon {
+    cursor:pointer;
+    position:relative;
+    top:0;
+    right:0;
+    content:"";
+    border-top: 2px solid #717171;
+    border-bottom: 2px solid #717171;
+    width:40px;
+    height:9px;
+    transition:all 1s linear;
+        &:before {
+        position:absolute;
+        top:8px;
+        right:0;
+        content:"";
+        border-bottom: 2px solid #717171;
+        width:40px;
+        height:4px;
+        transition:all 1s linear;
+        }
+        &:after {
+        position:absolute;
+        top:14px;
+        right:0;
+        content:"";
+        border-bottom: 2px solid #717171;
+        width:40px;
+        height:5px;
+        transition:all 1s linear;
+        }
+    }
+    &__icon-close {
+    position:relative;
+    top:0;
+    right:0;
+    content:"";
+    border-bottom: 2px solid #717171;
+    border-top: 0;
+    transform: rotate(45deg);
+    width:30px;
+    height:9px;
+    transition:all 1s linear;
+        &:before {
+        position:absolute;
+        top:5px;
+        right:3px;
+        content:"";
+        border-bottom: 2px solid #717171;
+        transform: rotate(-90deg);
+        width:30px;
+        height:4px;
+        transition:all 1s linear;
+        }
+        &:after {
+        border:none;
+        }
+    }
+    }
+    &__list {
+    display:flex;
+    position:absolute;
+    flex-direction: column;
+    list-style: none;
+    margin:0;
+    padding: 5px 25px 20px 20px;
+    right:-25px;
+    top:40px;
+    transform:translateX(150px);
+    background-color: #EDF2EC;
+    text-align: right;
+    transition: all 1s linear;
+    white-space: nowrap;
+    }
+    .burger-active {
+    transform:translateX(0px);
+    transition: all 1s linear;
+    }
+    &__item a {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #010201;
+    text-decoration: none;
+    }
+    &__item a:focus {
+    color: #E06733;
+    font-weight: 700;
+    transition: all 0.5s linear;
+    }
+}

@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Inika";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inika"),
+         /* Если не получилось, загрузит woff2 */
+        url("../../../fonts/Inika-Regular.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+        url("../../../fonts/Inika-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Inika";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Inika"),
+        url("../../../fonts/Inika-Bold.woff2") format("woff2"),
+        url("../../../fonts/Inika-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Inter"),
+        url("../../../fonts/Inter-Regular.woff2") format("woff2"),
+        url("../../../fonts/Inter-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Inter"),
+        url("../../../fonts/Inter-Bold.woff2") format("woff2"),
+        url("../../../fonts/Inter-Bold.woff") format("woff");
+}
