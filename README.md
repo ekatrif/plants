@@ -7,6 +7,7 @@
 ## Стек технологий:
 
 - Git
+- Figma
 - HTML
 - CSS
 - SCSS
