@@ -4,7 +4,7 @@
 
 **Ссылка на задание**: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/plants/plants.md
 
-## Стек технологий:
+## Стек:
 
 - Git
 - Figma
